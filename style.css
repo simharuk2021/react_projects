@@ -1,0 +1,105 @@
+body {
+    background-color: #0d2b3e;
+    font-family: Arial, sans-serif;
+  }
+
+/* Reset default margin and padding */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container styles */
+  #container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Logo styles */
+  .logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .react-logo {
+    max-width: 200px;
+  }
+  
+  /* Projects container styles */
+  .projects-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+  }
+  
+  @media (max-width: 768px) {
+    .projects-container {
+      flex-direction:column ;
+    }
+    .project{
+        /* flex-basis: calc(33.33%); */
+        width:70%;
+    }
+    .btn-group{
+        flex-direction: column;
+    
+      }
+}
+
+
+  /* Project tile styles */
+  .project {
+    flex-basis: calc(33.33% - 20px);
+    background-color: #61dafb; /* Set background color to React light blue */
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ffffff; /* Set text color to white */
+  }
+  
+  .project p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #ffffff; /* Set text color to white */
+  }
+
+  .btn-group{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+  }
+  
+  .project button {
+    margin:1rem;
+    background-color: #e0e0e0; /* Light gray color */
+    color: #0d2b3e; /* Dark blue text color */;
+  }
+  
+  .project button:hover {
+    background-color: #d3d3d3; /* Slightly darker shade of gray on hover */
+  }
+  
+  .text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px;
+    color:white;
+    font-weight: bold; /* Set text to bold */
+  }
