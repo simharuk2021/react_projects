@@ -22,8 +22,14 @@ body, h1, h2, p {
     margin-bottom: 20px;
   }
   
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
   .react-logo {
     max-width: 200px;
+    animation: spin 10s infinite linear; /* Adjust animation duration as needed */
   }
   
   /* Projects container styles */
@@ -64,12 +70,15 @@ body, h1, h2, p {
     font-size: 24px;
     margin-bottom: 10px;
     color: #ffffff; /* Set text color to white */
+    font-weight: bold; /* Set text to bold */
+
   }
   
   .project p {
     font-size: 16px;
     margin-bottom: 20px;
     color: #ffffff; /* Set text color to white */
+    font-weight: bold; /* Set text to bold */
   }
 
   .btn-group{
